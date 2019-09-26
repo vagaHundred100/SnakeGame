@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Game Over.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 128
+font_data = ExtResource( 2 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.521569, 0.858824, 0.211765, 1 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 200.0
+size_flags_horizontal = 15
+size_flags_vertical = 0
+size_flags_stretch_ratio = 82.66
+custom_fonts/font = SubResource( 1 )
+text = "Game Over!"
+valign = 1
